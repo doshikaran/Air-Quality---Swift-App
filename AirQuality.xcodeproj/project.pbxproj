@@ -11,6 +11,10 @@
 		8D3333B22ACA744100639CEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3333B12ACA744100639CEB /* ContentView.swift */; };
 		8D3333B42ACA744200639CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3333B32ACA744200639CEB /* Assets.xcassets */; };
 		8D3333B72ACA744200639CEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3333B62ACA744200639CEB /* Preview Assets.xcassets */; };
+		8D3333BF2ACA824800639CEB /* XCAAQI in Frameworks */ = {isa = PBXBuildFile; productRef = 8D3333BE2ACA824800639CEB /* XCAAQI */; };
+		8D3333C12ACA837600639CEB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3333C02ACA837600639CEB /* ViewModel.swift */; };
+		8D4DAE862ACB5B62004C11DD /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4DAE852ACB5B61004C11DD /* CircleView.swift */; };
+		8DF94DB02ACA94BE006DDEAA /* CoordinateFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF94DAF2ACA94BE006DDEAA /* CoordinateFinder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		8D3333B12ACA744100639CEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D3333B32ACA744200639CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D3333B62ACA744200639CEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D3333C02ACA837600639CEB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8D4DAE852ACB5B61004C11DD /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		8DF94DAF2ACA94BE006DDEAA /* CoordinateFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateFinder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3333BF2ACA824800639CEB /* XCAAQI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +61,11 @@
 			children = (
 				8D3333AF2ACA744100639CEB /* AirQualityApp.swift */,
 				8D3333B12ACA744100639CEB /* ContentView.swift */,
+				8D4DAE852ACB5B61004C11DD /* CircleView.swift */,
+				8DF94DAF2ACA94BE006DDEAA /* CoordinateFinder.swift */,
 				8D3333B32ACA744200639CEB /* Assets.xcassets */,
 				8D3333B52ACA744200639CEB /* Preview Content */,
+				8D3333C02ACA837600639CEB /* ViewModel.swift */,
 			);
 			path = AirQuality;
 			sourceTree = "<group>";
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = AirQuality;
+			packageProductDependencies = (
+				8D3333BE2ACA824800639CEB /* XCAAQI */,
+			);
 			productName = AirQuality;
 			productReference = 8D3333AC2ACA744100639CEB /* AirQuality.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 8D3333A32ACA744100639CEB;
+			packageReferences = (
+				8D3333BD2ACA824800639CEB /* XCRemoteSwiftPackageReference "XCAAQI" */,
+			);
 			productRefGroup = 8D3333AD2ACA744100639CEB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3333B22ACA744100639CEB /* ContentView.swift in Sources */,
+				8D4DAE862ACB5B62004C11DD /* CircleView.swift in Sources */,
+				8DF94DB02ACA94BE006DDEAA /* CoordinateFinder.swift in Sources */,
+				8D3333C12ACA837600639CEB /* ViewModel.swift in Sources */,
 				8D3333B02ACA744100639CEB /* AirQualityApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D3333BD2ACA824800639CEB /* XCRemoteSwiftPackageReference "XCAAQI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAAQI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D3333BE2ACA824800639CEB /* XCAAQI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D3333BD2ACA824800639CEB /* XCRemoteSwiftPackageReference "XCAAQI" */;
+			productName = XCAAQI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8D3333A42ACA744100639CEB /* Project object */;
 }
